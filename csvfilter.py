@@ -81,6 +81,7 @@ def main():
 
     for i, line in enumerate(sys.stdin):
         if i == 0 and skip_header:
+            print(line.strip())
             continue
 
         process(line.strip(), sep, col, maxval, maxopen, minval, minopen)
