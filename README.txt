@@ -12,7 +12,7 @@ ARGUMENTS AND FLAGS
 
     -h, --help         show this help message and exit
     -c IDX, --col IDX  zero-indexed column to filter on, defaults to 0
-    -H, --skip-header  skip the first line (e.g. used for headers)
+    -H, --skip-header  always print the first line (e.g. used to maintain headers)
     -s SEP, --sep SEP  separator string, defaults to ","
     -l VAL, --leq VAL  only print values less than or equal to this value
     -L VAL, --lt VAL   only print values less than this value
@@ -33,5 +33,6 @@ EXAMPLE
     You can use csvfilter to filter out everyone older than 16.
 
 	$ ./csvfilter.py -c 1 -H -s ';' --gt 16
+	name; age; favorite_drink
 	bob; 32; mate
 	celia; 24; water

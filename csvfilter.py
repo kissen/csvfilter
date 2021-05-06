@@ -16,7 +16,7 @@ def parse_arguments():
         dest='col', help='zero-indexed column to filter on, defaults to 0', metavar='IDX')
 
     parser.add_argument('-H', '--skip-header', required=False, action='store_true',
-        dest='skip_header', help='skip the first line (e.g. used for headers)')
+        dest='skip_header', help='always print first line (e.g. used to maintain headers)')
 
     parser.add_argument('-s', '--sep', required=False, action='store', type=str,
         dest='separator', help='separator string, defaults to ","', metavar='SEP', default=',')
